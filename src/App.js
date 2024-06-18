@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import { Dialog, Transition, RadioGroup } from "@headlessui/react";
 import { Fragment, useEffect, useState } from "react";
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
-import { db } from "./firebaseConfig";
+import { db } from "./firebaseConfig.js";
 import { set, ref, onValue, remove, update } from "firebase/database";
 
 const pizzaFlavor = [

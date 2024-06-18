@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "staging": "shakeys-sample-crud-menu"
+  },
+  "targets": {
+    "shakeys-sample-crud-menu": {
+      "hosting": {
+        "staging": [
+          "shakeys-sample-merchant-staging"
+        ]
+      }
+    }
+  },
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}

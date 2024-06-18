@@ -1,8 +1,16 @@
 {
-  "hosting": {
-    "site": "shakeys-sample-merchant",
-
-    "public": "public",
-    ...
-  };
+	"hosting": [
+		{
+			"target": "staging",
+			"site": "shakeys-sample-merchant-staging",
+			"public": "public",
+			"ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+			"rewrites": [
+				{
+					"source": "**",
+					"destination": "/index.html"
+				}
+			]
+		}
+	]
 }
